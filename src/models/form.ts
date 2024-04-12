@@ -58,5 +58,22 @@ export interface FormField {
   maxLength?: number;
   min?: number;
   minLength?: number;
-  pattern?: string;
+  pattern?: RegExp;
+}
+
+export type FormFieldValue = {
+  name: string;
+  email: string;
+  phone: number;
+  meeting_date: string;
+  meeting_time: string;
+  date_time: string;
+  website: string;
+  password: string;
+  id: number;
+  age: number;
+  gender: string;
+  subscription: boolean;
+  contact: string;
+  comments: string;
 }

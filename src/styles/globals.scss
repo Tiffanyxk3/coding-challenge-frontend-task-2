@@ -3,6 +3,93 @@
 @tailwind utilities;
 
 body {
+  color: black;
+  background: white;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-left: 3em;
+}
+
+pre {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+  line-height: 3;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+input, select, textarea, button {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+input {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.input-container {
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.input-box {
+  margin-left: 0.5em;
+}
+
+.contact-option-container, .contact-option {
+  margin-left: 0.5em;
+}
+
+.alert {
+  display: inline-block;
+  background-color: #eb6658;
   color: white;
-  background: black;
+  border-radius: 3px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 0.3em;
+}
+
+button {
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.submit-btn, .get-config-btn {
+  margin-right: 1em;
+  background-color: rgb(32, 196, 32);
+  border-color: rgb(32, 196, 32);
+  color: white;
+}
+
+.submit-btn:hover, .get-config-btn:hover {
+  background-color: rgb(108, 215, 108);
+}
+
+.form-config-container {
+  margin-bottom: 2.5em;
+}
+
+@media (max-width: 640px) {
+  .alert {
+    display: table;
+    margin-left: 0;
+    margin-top: 0.3em;
+  }
+
+  label {
+    display: table;
+  }
 }
